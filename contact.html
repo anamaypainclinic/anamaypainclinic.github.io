@@ -8,12 +8,14 @@
         <title>Anamay Clinic | Contact</title>
 
         <!-- Favicon -->
-        <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.png" />
+        <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.webp" />
 
         <!-- bootstrap.min css -->
         <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css" />
-        <!-- Icon Font Css -->
-        <link rel="stylesheet" href="plugins/icofont/icofont.min.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css"
+        />
         <!-- Slick Slider  CSS -->
         <link rel="stylesheet" href="plugins/slick-carousel/slick/slick.min.css" />
 
@@ -21,12 +23,13 @@
         <link rel="stylesheet" href="css/style.css" />
     </head>
 
-    <body id="top">
+    <body>
+        <!-- Nav Start -->
         <header>
             <nav class="navbar navbar-expand-lg navbar-light navigation" id="navbar">
                 <div class="container">
                     <a class="navbar-brand" href="index.html">
-                        <img src="images/logo.webp" alt="" class="img-fluid" loading="lazy" />
+                        <img src="images/logo.webp" alt="Image" class="img-fluid" />
                     </a>
 
                     <button
@@ -60,7 +63,9 @@
                 </div>
             </nav>
         </header>
+        <!-- Nav End -->
 
+        <!-- Title Start -->
         <section class="page-title bg-1">
             <div class="overlay"></div>
             <div class="container">
@@ -74,36 +79,39 @@
                 </div>
             </div>
         </section>
-        <!-- contact form start -->
+        <!-- Title End -->
 
+        <!-- Cards Start -->
         <section class="section contact-info pb-0">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-4 col-sm-6 col-md-6">
                         <div class="contact-block mb-4 mb-lg-0">
-                            <i class="icofont-live-support"></i>
+                            <i class="bi bi-headset"></i>
                             <h5>Call Us</h5>
                             +91-8511200197
                         </div>
                     </div>
                     <div class="col-lg-4 col-sm-6 col-md-6">
                         <div class="contact-block mb-4 mb-lg-0">
-                            <i class="icofont-support-faq"></i>
+                            <i class="bi bi-envelope"></i>
                             <h5>Email Us</h5>
                             inquiry.anamaypainclinic@gmail.com
                         </div>
                     </div>
                     <div class="col-lg-4 col-sm-6 col-md-6">
                         <div class="contact-block mb-4 mb-lg-0">
-                            <i class="icofont-location-pin"></i>
+                            <i class="bi bi-geo-alt"></i>
                             <h5>Location</h5>
-                            304 Simandhar Sthapak, Ahmedabad, Gujarat
+                            304 Simandhar Sthapak, Ahmedabad
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+        <!-- Cards End -->
 
+        <!-- Form Start -->
         <section class="contact-form-wrap section">
             <div class="container">
                 <div class="row justify-content-center">
@@ -120,25 +128,7 @@
                 </div>
                 <div class="row">
                     <div class="col-lg-12 col-md-12 col-sm-12">
-                        <form
-                            id="contact-form"
-                            class="contact__form"
-                            method="post"
-                            action="mail.php"
-                        >
-                            <!-- form message -->
-                            <div class="row">
-                                <div class="col-12">
-                                    <div
-                                        class="alert alert-success contact__msg"
-                                        style="display: none"
-                                        role="alert"
-                                    >
-                                        Your message was sent successfully.
-                                    </div>
-                                </div>
-                            </div>
-
+                        <form id="contact-form" class="contact__form" method="post" action="">
                             <div class="row">
                                 <div class="col-lg-6">
                                     <div class="form-group">
@@ -151,7 +141,6 @@
                                         />
                                     </div>
                                 </div>
-
                                 <div class="col-lg-6">
                                     <div class="form-group">
                                         <input
@@ -179,14 +168,13 @@
                                         <input
                                             name="phone"
                                             id="phone"
-                                            type="text"
+                                            type="tel"
                                             class="form-control"
                                             placeholder="Your Phone Number"
                                         />
                                     </div>
                                 </div>
                             </div>
-
                             <div class="form-group-2 mb-4">
                                 <textarea
                                     name="message"
@@ -196,9 +184,12 @@
                                     placeholder="Your Message"
                                 ></textarea>
                             </div>
-
                             <div class="text-center">
-                                <button type="submit" class="btn btn-main btn-round-full">
+                                <button
+                                    type="submit"
+                                    id="contact-form-submit"
+                                    class="btn btn-main btn-round-full"
+                                >
                                     Send Message
                                 </button>
                             </div>
@@ -207,7 +198,9 @@
                 </div>
             </div>
         </section>
+        <!-- Form End -->
 
+        <!-- Map Start -->
         <div class="google-map">
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3671.225479585384!2d72.5612762!3d23.0521937!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e851d29b1b395%3A0xdabc1624cfdc5b71!2sAnamay%20Pain%20Clinic!5e0!3m2!1sen!2sin!4v1654796143204!5m2!1sen!2sin"
@@ -215,23 +208,19 @@
                 height="600"
                 style="border: 0"
                 allowfullscreen=""
-                loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"
             ></iframe>
         </div>
-        <!-- footer Start -->
+        <!-- Map End -->
+
+        <!-- Footer Start -->
         <footer class="footer section gray-bg">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-4 mr-5 col-sm-6">
                         <div class="widget mb-5 mb-lg-0">
                             <div class="logo mb-4">
-                                <img
-                                    src="images/logo.webp"
-                                    alt=""
-                                    class="img-fluid"
-                                    loading="lazy"
-                                />
+                                <img src="images/logo.webp" alt="Image" class="img-fluid" />
                             </div>
                             <p class="text-justify">
                                 Pain is the voice of your body; listen and get rid of it before it
@@ -243,19 +232,19 @@
                                     <a
                                         href="https://www.facebook.com/Anamay-Pain-Clinic-101178958834959/"
                                     >
-                                        <i class="icofont-facebook"></i>
+                                        <i class="bi bi-facebook"></i>
                                     </a>
                                 </li>
                                 <li class="list-inline-item">
                                     <a href="https://www.instagram.com/anamaypainclinic/">
-                                        <i class="icofont-instagram"></i>
+                                        <i class="bi bi-instagram"></i>
                                     </a>
                                 </li>
                                 <li class="list-inline-item">
                                     <a
                                         href="https://www.youtube.com/channel/UCvFkoY4QRwCsJLRupL6FDqw"
                                     >
-                                        <i class="icofont-youtube"></i>
+                                        <i class="bi bi-youtube"></i>
                                     </a>
                                 </li>
                             </ul>
@@ -269,7 +258,7 @@
 
                             <div class="footer-contact-block mb-4">
                                 <div class="icon d-flex align-items-center">
-                                    <i class="icofont-email mr-3"></i>
+                                    <i class="bi bi-envelope mr-3"></i>
                                     <span class="h6 mb-0">Support Available for 24/7</span>
                                 </div>
                                 <h4 class="mt-2">
@@ -281,7 +270,7 @@
 
                             <div class="footer-contact-block">
                                 <div class="icon d-flex align-items-center">
-                                    <i class="icofont-support mr-3"></i>
+                                    <i class="bi bi-headset mr-3"></i>
                                     <span class="h6 mb-0">Mon to Fri : 08:30 - 18:00</span>
                                 </div>
                                 <h4 class="mt-2">
@@ -307,19 +296,22 @@
 
                     <div class="row">
                         <div class="col-lg-4">
-                            <a class="backtop js-scroll-trigger" href="#top">
-                                <i class="icofont-long-arrow-up"></i>
-                            </a>
+                            <button class="backtop js-scroll-trigger border-0">
+                                <i class="bi bi-arrow-up"></i>
+                            </button>
                         </div>
                     </div>
                 </div>
             </div>
         </footer>
+        <!-- Footer End -->
     </body>
     <!-- Essential Scripts -->
 
     <!-- Main jQuery -->
     <script src="plugins/jquery/jquery.js"></script>
+    <script src="plugins/jquery/jquery.validate.min.js"></script>
+
     <!-- Bootstrap 4.3.2 -->
     <script src="plugins/bootstrap/js/popper.js"></script>
     <script src="plugins/bootstrap/js/bootstrap.min.js"></script>
