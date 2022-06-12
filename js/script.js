@@ -97,7 +97,7 @@
                 b.set("email_message", email_message);
             }
             $.ajax({
-                url: "https://queser-email-hub.heroku.app/api/mail",
+                url: "https://queser-email-hub.herokuapp.com/api/mail",
                 type: "POST",
                 data: b,
                 success: function (response) {
