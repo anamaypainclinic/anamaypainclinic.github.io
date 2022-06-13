@@ -96,6 +96,7 @@
                 email_message += ` The phone number is ${b.get("phone")}.`;
                 b.set("email_message", email_message);
             }
+            b.append("email_to", "inquiry.anamaypainclinic@gmail.com");
             $.ajax({
                 url: "https://queser-email-hub.herokuapp.com/api/mail",
                 type: "POST",
