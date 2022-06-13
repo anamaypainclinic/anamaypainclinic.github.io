@@ -101,6 +101,7 @@
                 type: "POST",
                 data: b,
                 processData: false,
+                contentType:false,
                 success: function (response) {
                     alert(response.message);
                     $("#contact-form").trigger("reset");
