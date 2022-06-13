@@ -100,10 +100,8 @@
                 url: "https://queser-email-hub.herokuapp.com/api/mail",
                 type: "POST",
                 data: b,
+                processData: false,
                 success: function (response) {
-                    b.forEach((element) => {
-                        console.log(element);
-                    });
                     alert(response.message);
                     $("#contact-form").trigger("reset");
                 },
