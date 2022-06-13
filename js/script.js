@@ -103,7 +103,7 @@
                 processData: false,
                 headers: {
                     'X-CSRF-TOKEN': getCSRFTokenValue()
-                }
+                },
                 success: function (response) {
                     alert(response.message);
                     $("#contact-form").trigger("reset");
